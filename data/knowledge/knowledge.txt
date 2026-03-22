@@ -1,0 +1,12 @@
+Ransomware attacks often involve encrypting files and demanding payment. Organizations reduce risk by using backups, segmentation, and patching.
+Phishing commonly uses fake login pages and urgent messages to steal credentials. MFA and user training reduce successful phishing.
+SOC analysts investigate suspicious login attempts by looking for failed logins, unusual locations, and impossible travel patterns.
+DNS tunneling can be used for data exfiltration. Detection involves looking for unusual DNS query length, high volume, and strange domains.
+SOC triage basics: confirm alert severity, validate it is not a false positive, identify impacted host/user, gather key IOCs, and escalate if business impact or spread risk is high.
+Account compromise triage: check recent logins, impossible travel, MFA resets, mailbox forwarding rules, OAuth consent grants, and unusual privilege changes.
+Malware alert response: isolate the endpoint, capture process tree, hash, network connections, and persistence methods. Block IOCs, run EDR scan, confirm no lateral movement.
+Brute force or password spraying: many failed logins across multiple users from one IP. Mitigate using rate limits, account lockouts, geo-blocking, and MFA enforcement.
+Data exfiltration indicators: unusual outbound traffic volume, large uploads to cloud storage, repeated DNS queries with long subdomains, connections to rare domains.
+Beaconing detection: periodic outbound connections at regular intervals, small data packets, consistent destination domain/IP, unusual user-agent strings.
+Privilege escalation signs: abnormal admin group membership changes, use of service accounts interactively, access to admin shares, new scheduled tasks created.
+MITRE mapping: phishing is Initial Access T1566, DNS tunneling relates to Exfiltration over Alternative Protocol T1048, lateral movement involves remote services T1021.
