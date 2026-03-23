@@ -8,7 +8,7 @@ langchain-text-splitters>=0.3.8
 openai>=1.58.0,<2.0.0
 
 # Vector store
-faiss-cpu==1.8.0
+faiss-cpu>=1.7.4,<2.0.0
 
 # Embeddings stack
 sentence-transformers==3.0.0
