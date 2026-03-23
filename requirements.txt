@@ -1,17 +1,17 @@
-# LangChain stack — all pinned to the same 0.3.x generation
+# LangChain stack
 langchain==0.3.20
 langchain-openai==0.3.12
 langchain-community==0.3.20
-langchain-core==0.3.45
+langchain-core==0.3.49        # was 0.3.45 — must be >=0.3.49 for langchain-openai==0.3.12
 langchain-text-splitters==0.3.8
 
-# OpenAI SDK — floor matches what langchain-openai 0.3.x actually requires
+# OpenAI SDK
 openai>=1.58.0,<2.0.0
 
 # Vector store
 faiss-cpu==1.8.0
 
-# Embeddings stack — versions that are mutually compatible
+# Embeddings stack
 sentence-transformers==3.0.0
 transformers==4.44.0
 huggingface-hub>=0.30.0,<1.0.0
@@ -19,7 +19,7 @@ huggingface-hub>=0.30.0,<1.0.0
 # Tokenizer
 tiktoken==0.7.0
 
-# PyTorch — unpinned, let Streamlit Cloud resolve CPU-compatible wheel
+# PyTorch
 torch>=2.1.0,<2.5.0
 
 # App
